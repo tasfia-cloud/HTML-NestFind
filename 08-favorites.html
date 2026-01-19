@@ -51,9 +51,9 @@ overflow: hidden;
                 <span class="iconify" data-icon="lucide:message-square" data-width="18" data-height="18" style="stroke-width: 1.5;"></span>
                 <span class="hidden sm:inline">My Inquiries</span>
             </a>
-            <button class="flex items-center gap-2 focus:outline-none ml-2">
-                <img class="h-8 w-8 rounded-full object-cover ring-2 ring-white shadow-sm border border-gray-200" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="User avatar">
-            </button>
+            <a href="./10-profile.html" class="flex items-center gap-2 focus:outline-none ml-2">
+                <img id="navAvatar" class="h-8 w-8 rounded-full object-cover ring-2 ring-white shadow-sm border border-gray-200" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="User avatar">
+            </a>
         </div>
     </nav>
 
@@ -290,5 +290,19 @@ overflow: hidden;
         </div>
     </main>
 
+
+    <!-- Profile Data Loader -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const saved = localStorage.getItem('nestfind_profile');
+            if (saved) {
+                const profile = JSON.parse(saved);
+                if (profile.avatar) {
+                    const navAvatar = document.getElementById('navAvatar');
+                    if (navAvatar) navAvatar.src = profile.avatar;
+                }
+            }
+        });
+    </script>
 
 </body></html>
