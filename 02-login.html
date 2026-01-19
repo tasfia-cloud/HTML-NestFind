@@ -42,7 +42,7 @@ background-color: #F5F5F5;
             <div class="space-y-1.5">
                 <div class="flex items-center justify-between">
                     <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                    <a href="#" class="text-sm font-medium text-[#0066CC] hover:text-[#0055aa] transition-colors">Forgot password?</a>
+                    <a href="./04-forgot-password.html" class="text-sm font-medium text-[#0066CC] hover:text-[#0055aa] transition-colors">Forgot password?</a>
                 </div>
                 <div class="relative">
                     <input type="password" id="password" name="password" placeholder="Enter your password" class="block w-full h-11 pl-3 pr-10 rounded-md border border-gray-200 bg-white text-sm text-gray-900 placeholder:text-gray-400 focus:border-[#0066CC] focus:outline-none focus:ring-4 focus:ring-[#0066CC]/10 transition-all shadow-sm" required="">
@@ -73,7 +73,7 @@ background-color: #F5F5F5;
 
             <div class="mt-6 text-center text-sm">
                 <span class="text-gray-500">Don't have an account?</span>
-                <a href="#" class="font-medium text-[#0066CC] hover:text-[#0055aa] ml-1 transition-colors">Create one</a>
+                <a href="./03-signup.html" class="font-medium text-[#0066CC] hover:text-[#0055aa] ml-1 transition-colors">Create one</a>
             </div>
         </div>
 
@@ -84,7 +84,7 @@ background-color: #F5F5F5;
         function togglePassword() {
             const passwordInput = document.getElementById('password');
             const eyeIcon = document.getElementById('eyeIcon');
-            
+
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';
                 eyeIcon.setAttribute('data-icon', 'lucide:eye-off');
@@ -93,6 +93,22 @@ background-color: #F5F5F5;
                 eyeIcon.setAttribute('data-icon', 'lucide:eye');
             }
         }
+
+        // Login form handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            if (email && password) {
+                // Demo login - redirect to home
+                if (email === 'demo@demo.com' && password === '1234') {
+                    location.href = './05-home.html';
+                } else {
+                    // Any credentials work for demo
+                    location.href = './05-home.html';
+                }
+            }
+        });
     </script>
 
 

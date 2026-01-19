@@ -92,7 +92,7 @@ border-radius: 4px;
                         <span class="text-sm text-gray-600 group-hover:text-gray-800 transition-colors">Remember me</span>
                     </label>
 
-                    <a href="#" class="text-sm font-medium text-[#0066CC] hover:text-[#0055aa] hover:underline decoration-[#0066CC]/30 underline-offset-2 transition-colors">
+                    <a href="./04-forgot-password.html" class="text-sm font-medium text-[#0066CC] hover:text-[#0055aa] hover:underline decoration-[#0066CC]/30 underline-offset-2 transition-colors">
                         Forgot Password?
                     </a>
                 </div>
@@ -114,7 +114,7 @@ border-radius: 4px;
 
             <!-- Footer Link -->
             <div class="mt-8 text-center pt-6 border-t border-gray-100">
-                <a href="#" class="inline-flex items-center gap-1.5 text-sm font-medium text-[#0066CC] hover:text-[#0055aa] transition-colors group">
+                <a href="./05-home.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-[#0066CC] hover:text-[#0055aa] transition-colors group">
                     <span class="iconify group-hover:-translate-x-0.5 transition-transform" data-icon="lucide:arrow-left" data-width="16" data-height="16"></span>
                     Back to main site
                 </a>
@@ -123,5 +123,17 @@ border-radius: 4px;
         </div>
     </main>
 
+    <script>
+        // Admin login form handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            if (email && password) {
+                // Demo admin login - redirect to admin dashboard
+                location.href = './11-admin-dashboard.html';
+            }
+        });
+    </script>
 
 </body></html>
