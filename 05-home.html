@@ -26,12 +26,12 @@ background-size: 1.5em 1.5em;
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 h-16 bg-white border-b border-gray-200 z-50 px-4 lg:px-6 flex items-center justify-between">
         <!-- Logo -->
-        <div class="flex items-center gap-2 flex-shrink-0 w-48">
+        <a href="./05-home.html" class="flex items-center gap-2 flex-shrink-0 w-48 cursor-pointer">
             <div class="w-8 h-8 bg-[#0066CC] rounded-lg flex items-center justify-center text-white">
                 <span class="iconify" data-icon="lucide:home" data-width="18" data-height="18" style="stroke-width: 1.5;"></span>
             </div>
             <span class="text-lg font-semibold tracking-tight text-gray-900">NestFind</span>
-        </div>
+        </a>
 
         <!-- Center Search -->
         <div class="hidden md:flex flex-1 justify-center max-w-[400px]">
@@ -127,10 +127,10 @@ background-size: 1.5em 1.5em;
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <!-- Card 1 -->
-            <div class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative">
+            <a href="./06-property-detail.html" class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative cursor-pointer">
                 <div class="aspect-[16/10] bg-gray-100 relative overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1600596542815-e32c187f63f5?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Property" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <button class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors group/heart">
+                    <button onclick="event.preventDefault(); event.stopPropagation(); this.querySelector('.iconify').classList.toggle('text-[#FF6B6B]');" class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors group/heart">
                         <span class="iconify text-gray-400 group-hover/heart:text-[#FF6B6B] transition-colors" data-icon="lucide:heart" data-width="18" data-height="18" style="stroke-width: 1.5;"></span>
                     </button>
                     <div class="absolute bottom-3 left-3">
@@ -162,13 +162,13 @@ background-size: 1.5em 1.5em;
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 2 (Active Heart) -->
-            <div class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative">
+            <a href="./06-property-detail.html" class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative cursor-pointer">
                 <div class="aspect-[16/10] bg-gray-100 relative overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Property" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <button class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors">
+                    <button onclick="event.preventDefault(); event.stopPropagation();" class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors">
                         <span class="iconify text-[#FF6B6B]" data-icon="lucide:heart" data-width="18" data-height="18" style="stroke-width: 1.5; fill: #FF6B6B"></span>
                     </button>
                 </div>
@@ -195,13 +195,13 @@ background-size: 1.5em 1.5em;
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 3 -->
-            <div class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative">
+            <a href="./06-property-detail.html" class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative cursor-pointer">
                 <div class="aspect-[16/10] bg-gray-100 relative overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Property" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <button class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors group/heart">
+                    <button onclick="event.preventDefault(); event.stopPropagation(); this.querySelector('.iconify').classList.toggle('text-[#FF6B6B]');" class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors group/heart">
                         <span class="iconify text-gray-400 group-hover/heart:text-[#FF6B6B] transition-colors" data-icon="lucide:heart" data-width="18" data-height="18" style="stroke-width: 1.5;"></span>
                     </button>
                 </div>
@@ -228,13 +228,13 @@ background-size: 1.5em 1.5em;
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 4 -->
-            <div class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative">
+            <a href="./06-property-detail.html" class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative cursor-pointer">
                 <div class="aspect-[16/10] bg-gray-100 relative overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Property" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <button class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors group/heart">
+                    <button onclick="event.preventDefault(); event.stopPropagation(); this.querySelector('.iconify').classList.toggle('text-[#FF6B6B]');" class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors group/heart">
                         <span class="iconify text-gray-400 group-hover/heart:text-[#FF6B6B] transition-colors" data-icon="lucide:heart" data-width="18" data-height="18" style="stroke-width: 1.5;"></span>
                     </button>
                 </div>
@@ -261,13 +261,13 @@ background-size: 1.5em 1.5em;
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 5 -->
-            <div class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative">
+            <a href="./06-property-detail.html" class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative cursor-pointer">
                 <div class="aspect-[16/10] bg-gray-100 relative overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Property" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <button class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors group/heart">
+                    <button onclick="event.preventDefault(); event.stopPropagation(); this.querySelector('.iconify').classList.toggle('text-[#FF6B6B]');" class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors group/heart">
                         <span class="iconify text-gray-400 group-hover/heart:text-[#FF6B6B] transition-colors" data-icon="lucide:heart" data-width="18" data-height="18" style="stroke-width: 1.5;"></span>
                     </button>
                     <div class="absolute bottom-3 left-3">
@@ -299,13 +299,13 @@ background-size: 1.5em 1.5em;
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 6 -->
-            <div class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative">
+            <a href="./06-property-detail.html" class="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden relative cursor-pointer">
                 <div class="aspect-[16/10] bg-gray-100 relative overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Property" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <button class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors group/heart">
+                    <button onclick="event.preventDefault(); event.stopPropagation(); this.querySelector('.iconify').classList.toggle('text-[#FF6B6B]');" class="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors group/heart">
                         <span class="iconify text-gray-400 group-hover/heart:text-[#FF6B6B] transition-colors" data-icon="lucide:heart" data-width="18" data-height="18" style="stroke-width: 1.5;"></span>
                     </button>
                 </div>
@@ -332,7 +332,7 @@ background-size: 1.5em 1.5em;
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
         </div>
 
